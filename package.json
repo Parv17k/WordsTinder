@@ -1,5 +1,5 @@
 {
-  "name": "chaos",
+  "name": "WordsTinder",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
