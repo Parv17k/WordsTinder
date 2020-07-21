@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
+    // tslint:disable-next-line:only-arrow-functions
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
   }
 
 }
